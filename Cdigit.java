@@ -1,15 +1,13 @@
 import java.util.Scanner;
 
 public class Cdigit {
-      public static void main(String args[]){
+    public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        if(a>=0 && a>=9){
-            System.err.println("single digit");
-        }else if(a>=10 && a<=99){
-            System.out.println("two digit");
+        char b=sc.next().charAt(0);
+        if(b>=0 && b<=9){
+            System.out.println("digit");
         }else{
-            System.out.println("three digit");
+            System.out.println("not a digit");
         }
-}
+    }
 }
